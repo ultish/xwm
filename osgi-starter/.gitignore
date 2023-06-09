@@ -1,2 +1,2 @@
-target/
-felix-cache/
+target/**
+felix-cache/**

@@ -7,12 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="osgi-starter" />
-        <module name="bundle-not-bundle" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="bundle-not-bundle" target="1.8" />
-      <module name="osgi-starter" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
