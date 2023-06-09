@@ -31,8 +31,9 @@ public class OsgiStart {
         BundleContext bc = fwk.getBundleContext();
 
         System.out.println(bc);
+
         Bundle bundle = bc.installBundle(
-            "file:/Users/ultish/Developer/xwm/bundle-not-bundle/target/bundle-not-bundle-0.0.2-SNAPSHOT.jar");
+            "file:///Users/ultish/Developer/xwm/bundle-not-bundle/target/bundle-not-bundle-0.0.5-SNAPSHOT.jar");
         bundle.start();
         System.out.println(bundle.getBundleId());
     }

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../bundle-not-bundle" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/osgi-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/../bundle-not-bundle/pom.xml" />
       </list>
     </option>
   </component>
