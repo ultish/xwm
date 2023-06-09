@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>xwm</groupId>
+  <artifactId>bundle-o-bundle</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
+  
+  
+    <properties>
+        <export.packages>${export.package}*;version=${unpack.version}</export.packages>
+        <import.packages>*</import.packages>
+        <private.packages>!*</private.packages>
+        <symbolic.name>${pom.groupId}.${pom.artifactId}</symbolic.name>
+        <embed-dep>*;scope=provided;type=!pom;inline=true</embed-dep>
+        <unpack-bundle>false</unpack-bundle>
+    </properties>
+
+    <build>
+    <plugins>
+     <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>1.2.0</version>
+        <configuration>
+            <unpackBundle>${unpack.bundle}</unpackBundle>
+            <instructions>
+                <Bundle-Name>${artifactId}</Bundle-Name>
+                <Bundle-SymbolicName>${symbolic.name}</Bundle-SymbolicName>
+                <Bundle-Description>${pom.name}</Bundle-Description>
+                <Import-Package>${import.packages}</Import-Package>
+                <Private-Package>${private.packages}</Private-Package>
+                <Include-Resource>${include.resources}</Include-Resource>
+                <Embed-Dependency>${embed-dep}</Embed-Dependency>
+                <_exportcontents>${export.packages}</_exportcontents>
+            </instructions>
+        </configuration>
+        <extensions>true</extensions>
+     </plugin>
+    </plugins>
+    </build>
+
+    <dependencies>
+      <dependency>
+        <groupId>xwm</groupId>
+        <artifactId>bundle-not-bundle</artifactId>
+        <version>0.0.2-SNAPSHOT</version>
+        <scope>provided</scope>
+      </dependency>
+    </dependencies>
+</project>
