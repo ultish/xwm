@@ -22,7 +22,7 @@ public class OsgiStart {
     }
 
     public void start() throws BundleException {
-        var ffs = ServiceLoader.load(FrameworkFactory.class);
+        ServiceLoader<FrameworkFactory> ffs = ServiceLoader.load(FrameworkFactory.class);
         FrameworkFactory ff = ffs.iterator().next();
         Map<String, String> config = new HashMap<String, String>();
         Framework fwk = ff.newFramework(config);

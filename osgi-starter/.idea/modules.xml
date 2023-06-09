@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../bundle-not-bundle/bundle-not-bundle.iml" filepath="$PROJECT_DIR$/../bundle-not-bundle/bundle-not-bundle.iml" />
       <module fileurl="file://$PROJECT_DIR$/osgi-starter/osgi-starter.iml" filepath="$PROJECT_DIR$/osgi-starter/osgi-starter.iml" />
     </modules>
   </component>

@@ -6,7 +6,12 @@
 	<artifactId>bundle-not-bundle</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<packaging>bundle</packaging>
-	
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	
 	<dependencies>
 		<dependency>
@@ -24,7 +29,6 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						 
 						<Bundle-SymbolicName>
 							${project.groupId}.${project.artifactId}
 						</Bundle-SymbolicName>
