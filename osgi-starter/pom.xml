@@ -15,11 +15,15 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.framework</artifactId>
             <version>7.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>xwm</groupId>
+            <artifactId>xwm.pokemon.interfaces</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

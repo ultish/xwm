@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="Osmorc" url="file://$PROJECT_DIR$/../bundle-not-bundle" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/../not.bundle" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -10,6 +11,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../osgi-starter/pom.xml" />
         <option value="$PROJECT_DIR$/../bundle-not-bundle/pom.xml" />
+        <option value="$PROJECT_DIR$/../eclipse.bundle/pom.xml" />
+        <option value="$PROJECT_DIR$/../xwm.pokemon.not.bundle/pom.xml" />
+        <option value="$PROJECT_DIR$/../not.bundle/pom.xml" />
+        <option value="$PROJECT_DIR$/../xwm.osgi-starter/pom.xml" />
       </list>
     </option>
   </component>

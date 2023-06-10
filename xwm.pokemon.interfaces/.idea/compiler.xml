@@ -8,8 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="osgi-starter" />
         <module name="bundle-not-bundle" />
+        <module name="xwm.osgi-starter" />
         <module name="xwm.pokemon.interfaces" />
+        <module name="not.bundle" />
+        <module name="eclipse.bundle" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xwm.pokemon.not.bundle" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="xwm.osgi-starter" options="-parameters" />
+    </option>
   </component>
 </project>
