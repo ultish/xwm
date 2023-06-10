@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EclipseBundle
+Bundle-SymbolicName: eclipse.bundle;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Export-Package: xwm.pokemon
+Automatic-Module-Name: eclipse.bundle
+Bundle-ClassPath: libs/xwm.pokemon.interfaces-0.0.1-SNAPSHOT.jar,
+ .
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
