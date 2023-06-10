@@ -6,7 +6,6 @@ import org.osgi.framework.BundleException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -34,6 +33,23 @@ public class BundleController {
 
       for (Bundle bundle : bundles) {
          bundle.getBundleId();
+
+         try {
+            Class<?> aClass = bundle.loadClass("xwm.pokemon.PokemonType");
+            //            PokemonType a;
+
+            // TODO we need to make a Pokemon extension point
+            //  and use those plugins to call an interface.
+
+            // TODO we need to load generic bundles that share code for other bundles
+            //  we aren't loading the bundles into maven context to call directly from.
+            System.out.println(aClass);
+if (aClass != null) {
+   bundle.
+}
+         } catch (ClassNotFoundException e) {
+            System.out.println("No Class: " + e.getMessage());
+         }
          BundleContext bundleContext = bundle.getBundleContext();
          System.out.println(bundleContext);
       }

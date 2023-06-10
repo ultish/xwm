@@ -5,32 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="676e52f0-2bfe-420a-8a46-962a1adc879d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../eclipse.bundle/eclipse.bundle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../not.bundle/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../not.bundle/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../not.bundle/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../not.bundle/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../not.bundle/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../not.bundle/src/main/java/not/bundle/NotBundle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/test/java/xwm/xwm/osgistarter/ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Partial__eclipse_bundle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../osgi-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../osgi-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../osgi-starter/src/main/java/xwm/osgi/OsgiStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../osgi-starter/src/main/java/xwm/osgi/OsgiStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/build.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,13 +64,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "code.cleanup.on.save": "true",
+    "last_opened_file_path": "/Users/ultish/Developer/xwm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xwm.xwm.osgistarter.Application" />
@@ -143,15 +127,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="5" />
+          <line>45</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.felix.framework.Felix" memberName="m_installRequestMap" />
+        <PinnedItemInfo parentTag="java.lang.Class" memberName="name" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
