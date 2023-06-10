@@ -1,0 +1,1 @@
+# Testing Various OSGi mechanisms
