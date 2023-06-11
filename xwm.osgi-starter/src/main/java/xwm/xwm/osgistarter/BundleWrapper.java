@@ -6,13 +6,31 @@ public class BundleWrapper {
    String version;
    String name;
    String location;
+   String state;
+   long id;
 
    public BundleWrapper(Bundle b) {
       if (b != null) {
+         id = b.getBundleId();
          version = b.getVersion()
             .toString();
          name = b.getSymbolicName();
          location = b.getLocation();
+
+         switch (b.getState()) {
+            case Bundle.ACTIVE:
+               state = "active";
+               break;
+            case Bundle.INSTALLED:
+               state = "installed";
+               break;
+            case Bundle.RESOLVED:
+               state = "resolved";
+               break;
+            case Bundle.UNINSTALLED:
+               state = "uninstalled";
+               break;
+         }
       }
    }
 
@@ -38,5 +56,21 @@ public class BundleWrapper {
 
    public void setLocation(String location) {
       this.location = location;
+   }
+
+   public String getState() {
+      return state;
+   }
+
+   public void setState(String state) {
+      this.state = state;
+   }
+
+   public long getId() {
+      return id;
+   }
+
+   public void setId(long id) {
+      this.id = id;
    }
 }

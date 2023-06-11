@@ -16,4 +16,8 @@ public class BundleService {
    public Bundle installBundle(String file) throws BundleException {
       return BundleLoader.installBundle(file);
    }
+
+   public boolean uninstallBundle(long id) throws BundleException {
+      return BundleLoader.uninstallBundle(id);
+   }
 }

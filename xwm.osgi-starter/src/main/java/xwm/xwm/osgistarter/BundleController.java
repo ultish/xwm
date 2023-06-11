@@ -6,7 +6,6 @@ import org.osgi.framework.BundleException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,7 +25,7 @@ public class BundleController {
    }
 
    @GetMapping(path = "pokemon")
-   public List<String> findPokemon() {
+   public List<BundleWrapper> findPokemon() {
       List<Bundle> bundles = bundleService.findAll()
          .stream()
          .collect(Collectors.toList());
@@ -44,9 +43,7 @@ public class BundleController {
             // TODO we need to load generic bundles that share code for other bundles
             //  we aren't loading the bundles into maven context to call directly from.
             System.out.println(aClass);
-if (aClass != null) {
-   bundle.
-}
+
          } catch (ClassNotFoundException e) {
             System.out.println("No Class: " + e.getMessage());
          }
@@ -54,11 +51,21 @@ if (aClass != null) {
          System.out.println(bundleContext);
       }
 
-      return Collections.singletonList("nah");
+      return bundles.stream()
+         .map(BundleWrapper::new)
+         .collect(Collectors.toList());
+
    }
 
-   @PostMapping
-   public BundleWrapper install(@RequestParam(name = "file") String file) throws BundleException {
+   @GetMapping(path = "/install")
+   @ResponseBody
+   public BundleWrapper install(@RequestParam String file) throws BundleException {
       return new BundleWrapper(bundleService.installBundle(file));
+   }
+
+   @GetMapping(path = "/uninstall")
+   @ResponseBody
+   public boolean uninstall(@RequestParam long id) throws BundleException {
+      return bundleService.uninstallBundle(id);
    }
 }

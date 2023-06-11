@@ -33,9 +33,26 @@ public class BundleLoader {
    }
 
    public static Bundle installBundle(String file) throws BundleException {
+      if (!file.startsWith("file:")) {
+         file = "file:" + file;
+      }
       Bundle bundle = instance.bc.installBundle(file);
 
       return bundle;
+   }
+
+   public static boolean uninstallBundle(long id) throws BundleException {
+      Optional<Bundle> first = Stream.of(instance.bc.getBundles())
+         .filter(b -> b.getBundleId() == id)
+         .findFirst();
+
+      if (first.isPresent()) {
+         first.get()
+            .uninstall();
+         return true;
+      } else {
+         return false;
+      }
    }
 
    public static List<Bundle> getBundles() {

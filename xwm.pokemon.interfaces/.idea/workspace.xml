@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="676e52f0-2bfe-420a-8a46-962a1adc879d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/GroupedOpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eclipse.bundle/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/build.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/src/eclipse/bundle/handlers/SampleHandler.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,15 +130,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.apache.felix.framework.Felix" memberName="m_installRequestMap" />
