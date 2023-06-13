@@ -6,7 +6,7 @@
 
 	<groupId>xwm</groupId>
 	<artifactId>eclipse.bundle</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.5-SNAPSHOT</version>
 	<packaging>eclipse-plugin</packaging>
 
 	<properties>
@@ -21,6 +21,7 @@
 			<groupId>xwm</groupId>
 			<artifactId>xwm.pokemon.interfaces</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>

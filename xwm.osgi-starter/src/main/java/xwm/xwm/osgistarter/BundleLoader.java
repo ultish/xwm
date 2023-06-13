@@ -22,6 +22,11 @@ public class BundleLoader {
       FrameworkFactory ff = ffs.iterator()
          .next();
       Map<String, String> config = new HashMap<String, String>();
+
+      //      FelixConstants.BOOT_CLASSLOADERS_PROP
+      config.put("org.osgi.framework.bootdelegation", "xwm.pokemon.*");
+      config.put("osgi.parentClassloader", "framework");
+      config.put("osgi.contextClassLoaderParent", "framework");
       fwk = ff.newFramework(config);
 
       try {

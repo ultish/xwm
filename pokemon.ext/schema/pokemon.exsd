@@ -17,6 +17,9 @@
          </appinfo>
       </annotation>
       <complexType>
+         <sequence>
+            <element ref="test-ele"/>
+         </sequence>
          <attribute name="point" type="string" use="required">
             <annotation>
                <documentation>
@@ -45,6 +48,21 @@
             <annotation>
                <documentation>
                   tes
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":xwm.pokemon.PokemonType"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="test-ele">
+      <complexType>
+         <attribute name="clazz" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
                </documentation>
                <appinfo>
                   <meta.attribute kind="java" basedOn=":xwm.pokemon.PokemonType"/>
