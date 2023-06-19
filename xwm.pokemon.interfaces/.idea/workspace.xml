@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="676e52f0-2bfe-420a-8a46-962a1adc879d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/build.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eclipse.bundle/src/eclipse/bundle/EclipsePokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse.bundle/src/eclipse/bundle/EclipsePokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../not.bundle/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../not.bundle/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -70,11 +63,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "code.cleanup.on.save": "true",
     "last_opened_file_path": "/Users/ultish/Developer/xwm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -134,11 +127,6 @@
           <url>jar://$MAVEN_REPOSITORY$/org/apache/felix/org.apache.felix.framework/7.0.5/org.apache.felix.framework-7.0.5.jar!/org/apache/felix/framework/Felix.class</url>
           <line>185</line>
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleController.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,12 +1,14 @@
 package xwm.xwm.osgistarter;
 
+import org.eclipse.core.runtime.adaptor.EclipseStarter;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.BundleException;
-import org.osgi.framework.launch.Framework;
-import org.osgi.framework.launch.FrameworkFactory;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -15,24 +17,28 @@ public class BundleLoader {
    static BundleLoader instance = new BundleLoader();
 
    private final BundleContext bc;
-   private final Framework fwk;
+   //   private final Framework fwk;
 
    private BundleLoader() {
-      ServiceLoader<FrameworkFactory> ffs = ServiceLoader.load(FrameworkFactory.class);
-      FrameworkFactory ff = ffs.iterator()
-         .next();
-      Map<String, String> config = new HashMap<String, String>();
-
-      //      FelixConstants.BOOT_CLASSLOADERS_PROP
-      config.put("org.osgi.framework.bootdelegation", "xwm.pokemon.*");
-      config.put("osgi.parentClassloader", "framework");
-      config.put("osgi.contextClassLoaderParent", "framework");
-      fwk = ff.newFramework(config);
 
       try {
-         fwk.start();
-         bc = fwk.getBundleContext();
-      } catch (BundleException e) {
+         Map<String, String> config = new HashMap<String, String>();
+         config.put("org.osgi.framework.bootdelegation", "*");
+         config.put("osgi.parentClassloader", "fwk");
+         config.put("osgi.contextClassLoaderParent", "fwk");
+
+         config.put("osgi.bundles", "org.eclipse.equinox.common@2:start,org.eclipse.update" +
+            ".configurator@3:start,org.eclipse.core.jobs@4:start,org.eclipse.core.runtime@start," +
+            "org.eclipse.equinox.registy@start");
+         config.put("osgi.clean", "true");
+         config.put("eclipse.noRegistryCache", "true");
+
+         EclipseStarter.setInitialProperties(config);
+         bc = EclipseStarter.startup(new String[0], null);
+
+         // TODO get Eclipse Platform for extension points
+
+      } catch (Exception e) {
          throw new RuntimeException(e);
       }
    }
