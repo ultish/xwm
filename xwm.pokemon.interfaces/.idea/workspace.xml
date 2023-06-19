@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="676e52f0-2bfe-420a-8a46-962a1adc879d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleLoader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xwm.osgi-starter/src/main/java/xwm/xwm/osgistarter/BundleLoader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +70,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -75,7 +78,7 @@
       <recent name="$PROJECT_DIR$/../" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.ApplicationKt">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="xwm.xwm.osgistarter.Application" />
       <module name="xwm.osgi-starter" />
@@ -89,9 +92,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xwm.xwm.osgistarter.Application" />
+      <module name="xwm.osgi-starter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xwm.xwm.osgistarter.ApplicationKt" />
+      <module name="xwm.osgi-starter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ApplicationKt" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="Kotlin.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -136,5 +155,9 @@
         <PinnedItemInfo parentTag="java.lang.Class" memberName="name" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
