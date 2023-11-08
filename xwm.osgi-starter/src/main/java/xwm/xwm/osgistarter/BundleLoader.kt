@@ -1,5 +1,6 @@
 package xwm.xwm.osgistarter
 
+import org.eclipse.core.runtime.Platform
 import org.eclipse.core.runtime.adaptor.EclipseStarter
 import org.osgi.framework.Bundle
 import org.osgi.framework.BundleContext
@@ -24,6 +25,9 @@ class BundleLoader private constructor() {
          config["eclipse.noRegistryCache"] = "true"
          EclipseStarter.setInitialProperties(config)
          bc = EclipseStarter.startup(arrayOfNulls(0), null)
+
+         val extensionPoints = Platform.getExtensionRegistry().extensionPoints
+         println(extensionPoints)
 
          // TODO get Eclipse Platform for extension points
       } catch (e: Exception) {
